@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>looping</title>
+</head>
+<body>
+    <script>
+        // 1 //
+        console.log("print 1 to n number print using while loop");
+        let input = 1;
+        let num = 4;
+        while(input<=num)
+        {
+            console.log(input);
+            input++;
+        }
+        // 2 //
+        console.log(" print 1 to n number and find even number using while loop");
+        let i = 0;
+        while(i <= 8){
+            if(i % 2 == 0){
+            console.log(i);
+            }
+            i++;
+        }
+        // 3 //
+        console.log("print 1 to n and number find odd number using do while loop")
+        let a = 0;
+        while(a <= 10){
+            if(a % 2 !== 0){
+                console.log(a);
+            }
+            a++;
+        }
+        // 4 //
+        console.log("print 1 to n number print using for loop");
+        let b = 10;
+        for(i=0;i<=b;i++){
+            console.log(i);
+        }
+        // 5 //
+        console.log("print 1 to n number and find even number using for loop");
+        let c = 8;
+        for(i=0;i<=c;i++){
+            if(i % 2 == 0){
+                console.log(i);
+            }
+        }
+        // 6 //
+        console.log("print 1 to n number  and all number sum using do while loop");
+        let k = 1;
+        let sum = 0;
+        let l = 10;
+        do{
+            sum = sum + k;
+            k++;
+        }while(k <= 1)
+        console.log("addition =",sum);
+        // 7 //
+        console.log("print multiplication table of any number using while loop");
+        const num1 = 5;
+        const len = 10;
+        let n = 1;
+        while(n <= len){
+            const res = num1 * n;
+            console.log(num1, n, res);
+            n++
+        }
+        // 8 //
+        console.log("print multiplication table of any number using do while loop");
+        const number = 2;
+        let d = 1;
+        do{
+            let result = number * d;
+            console.log(number, d, result);
+            d++;
+        }while(d <= 10);
+        // 9 //
+        console.log("print multiplication table of any number using for loop");
+        const number1 = 3;
+        for(let i=1;i<=10;i++){
+            const result = number1 * i;
+            console.log(number1, i, result);
+        }
+        // 10 //
+        console.log("calculate factorial of a number using while loop.");
+        let h = 4;
+        let result =1;
+        while(h > 0){
+            result *= h;
+            h--
+        }
+        console.log("multiplication = ",result);
+        // 11 //
+        console.log("Check weather num is prime or not using for loop");
+        let t = 2;
+        let s;
+        let count = 0;
+        for (s=1;s<=5;s++){
+            if(t % s == 0){
+                count++;
+            }
+        }
+        if(count == 2){
+            console.log("This Number is a Prime number = ",t);
+        }
+        else{
+            console.log("This is number is not a Prime number = ",t);
+        }
+        // 12 //
+        console.log("Check weather num is prime or not using while loop");
+        let num2 = 10;
+        let b1 = 1;
+        let counts = 0;
+        while(num2 >= b1){
+            if(num2 % b1 == 0){
+                counts++;
+            }
+            b1++;
+        }
+        if(counts == 2){
+            console.log("This number is a Prime Number = ",num2);
+        }
+        else{
+            console.log("This number is not a Prime number = ",num2);
+        }
+        // 13 //
+        console.log("print out Fibonacci series. (0,1,1,2,3,5,8…)");
+        let x = 7;
+        let y = 0;
+        let z = 1;
+        let j;
+        let g;
+        for(g=1;g<=x;g++){
+            console.log(y);
+            j = y + z;
+            y = z;
+            z = j;
+        }
+    </script>
+</body>
+</html>
